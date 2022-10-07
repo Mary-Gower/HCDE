@@ -11,12 +11,12 @@ h1,h2,h3,h4 {
 
 
 a {
-  color: #000;
+  color: #EEE;
 }
 
 .header {
   background: #fff;
-  color: #000;
+  color: #EEE;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -36,7 +36,7 @@ a {
 }
 
 .assignment a {
-    color: #000;
+    color: #EEE;
     text-decoration: none;
 }
 
