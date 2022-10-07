@@ -1,2 +1,2 @@
-HCDE Topics Digital Fabrication
-Mary Gower
+HCDE Digital Fabrication
+Mary Gower Project Page
