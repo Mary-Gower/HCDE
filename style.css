@@ -11,12 +11,12 @@ h1,h2,h3,h4 {
 
 
 a {
-  color: #EEE;
+  color: #3A3B3C;
 }
 
 .header {
   background: #fff;
-  color: #EEE;
+  color: #3A3B3C;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -36,13 +36,13 @@ a {
 }
 
 .assignment a {
-    color: #EEE;
+    color: #3A3B3C;
     text-decoration: none;
 }
 
 .assignment a:hover {
-  background: #00F;
-  color: #00F;
+  background: #00FFFF;
+  color: #00FFFF;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ a {
 }
 
 .widebody a:hover {
-  background: #00F;
+  background: #00FFFF;
   color: #FFF;
   text-decoration: none;
 }
