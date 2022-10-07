@@ -2,11 +2,11 @@
 html, body {
   padding: 0 0 0 0;
   margin: 0;
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'poppins', 'quicksand', 'sans';
 }
 
 h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'poppins', 'quicksand', 'sans';
   }
 
 
@@ -28,7 +28,7 @@ a {
 .assignment {
   font-size: 12px;
   line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'poppins', 'quicksand', 'sans';
   padding: 20px 20px 20px 30px;
   width: 250px;
   height: 350px;
@@ -41,8 +41,8 @@ a {
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  background: #00F;
+  color: #00F;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ a {
 }
 
 .widebody a:hover {
-  background: #F06;
+  background: #00F;
   color: #FFF;
   text-decoration: none;
 }
