@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Assignment 2: Little Boxes</title> 
+        <title>Assignment 3: Getting Started with 3D Printing</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -14,15 +14,15 @@
         <div class="header">
 	    </div>
 	    <div>
-            <h1>Parametric Modeling & Grasshopper</h1>
+            <h1>3D Printing</h1>
             <p>
             <img src="grasshopper-box-assembled.JPG" width=400></a>
             </p>
             <p>
-            The Goal: Create a series of unique parts designed in with the parametric software Grasshopper in Rhino with interlocking notches that can be cut to the dimensions of cardboard for a secure fit.
+            The Goal: Assemble and level 3D printer and create (in Rhino), slice (in Cura) a series of objects to print, including a nested set of objects.
             </p>
 	   <p>
-            Tools Used: iPad, Apple Pen, & Procreate to sketch, Illustrator, Rhino, Calipers, Cardboard, Laser Cutter
+            Tools Used: Illustrator, Rhino, Calipers, Filament, 3D Printer, many YouTube tutorials on how to print things on an Ender3 Pro
             </p>
 	</div>
 
@@ -31,58 +31,71 @@
 
         <div class="header h1">
 </div>
-            <h2>Beginning with a Sketch</h2>
+            <h2>Setting Up the Printer</h2>
 	    <p>
             <img src="grasshopper-procreate-sketch.jpeg" width=400></a>
             </p>
  <p>
-            I began this assignment by sketching out some ideas that I thought could be simple enough for me to set rules for in Grasshopper. Parametric modeling is completely new to me and was difficult to understand in class, so I knew I wanted make something that was basic and allowed for the reuse of the same part in its construction.
+            I began by setting up the printer following the instructions included with the model. The printer is a Creality Ender3 Pro and took approximately 2.5 hours to assemble. After assembly I loaded the filament and got to work leveling the bed. For this I used the instuctions found on Thingiverse here: https://www.thingiverse.com/thing:3235018 along with the YouTube video linked therein. This process was very tedious and took approximately 45 minutes of adjusting. I also had to change the Z height in order to make the glass plate fit onto the bed.
 	    </p>   
    </div>
 
   <div class="header h1">
-            <h2>Checking the Dimensions in Rhino</h2>
+            <h2>First Prints</h2>
             <p>
             <img src="grasshopper-final.png" width=400></a>
             </p>
             <p>
-      	    As with the last project, I measured my cardboard using calipers to understand that I wanted a 2mm width when I extruded the final shape. This helped me to know how large to make my notches. In order to create the parametric models in Grasshopper, I watched a few tutorials - and the tutorial made by our TA was a great help! I found it difficult to understand the logic and equations so I attempted to do what I had already learned in Rhino and make a simple shape with notches using the circle, rectangle, and array commands. </p>
+      	    I printed the following test prints, creating a cube in rhino and exporting it as an STL into Cura and then using the microSD chip to transfer the file to the Ender3 Pro. I used the same process for all of the prints that I made. </p>
+<p>
+A 2cm cube with the standard "low quality" settings (25 minutes to print)
+A 2cm cube with the standard "standard quality" settings (25 minutes to print)
+A 2cm cube with the standard "super quality" settings (50 minutes to print)
+	 </p>
             <p>
             <img src="grasshopper-perspective.png" width=400></a>
             </p>
 	    <p>
-            I made one design that I replicated and extruded into 3D shapes in Rhino in order to understand if the pieces would fit together. One thing that I noted was that it was much easier to align the pieces in Rhino than it was to assemble the structure in 3D once the elements were laser cut. This was because the top of the box was not easy to place on. Given more time and availability of a working laser cutter, I would go back and redesign this and perhaps make different connectors for the top of the lid or add notches to the rectangular lid itself to ease with assembly.
+            I then printed a 2 cm cube with a concentric top and bottom layer and with the "super quality" setting as that was the setting that I liked the most in the test prints. Time to print for that was 46 minutes.
         </p>
 	    <p>
             <img src="grasshopper-laser-cutter.JPG" width=400></a>
             </p>
 	    <p>
-            When I went to laser cut, I used a Speed 25% and Power 50% 
+            My settings were placed at 200 degrees for the nozzle and the bed was set to 65 degrees fahrenheit.
             </p>
 	    <p>
             <img src="grasshopper-pieces.JPG" width=400></a>
             </p>
 	    <p>
-            In the end, the final product came out fitting together and securely despite the difficulty of assembly to get a top piece on! I ended up just adjusting the design to make open-topped boxes.
+           Finally, I printed the following items and here are their print times:
+            </p>
+ <p>
+A tube 3cm in diameter and 3cm high with a single extrusion wall thickness (20 minutes to print)
+A tube 3cm in diameter and 3cm high with a double extrusion wall thickness and random z-seam alignment (24 minutes to print)
+A cylinder 3cm in diameter exported with a 0.1mm tolerance (44 minutes to print)
+A cylinder 3cm in diameter exported with a 0.001mm tolerance (42 minutes to print)
+A cylinder 3cm in diameter with special mode "spiralize outer contour". (44 minutes to print)
+A cylinder 3cm in diameter printed on its side with supports on. (50 minutes to print)
             </p>
 	    <p>
             <img src="grasshopper-box-assembled.JPG" width=400></a>
-         
+         </p>
 	    <p>
 		Source Files: 
 </p>
 <p>
-Grasshopper: https://github.com/Mary-Gower/HCDE/blob/master/Grasshopper-laser-cut-1.gh
+Grasshopper: 
 </p>
 <p>
-Rhino: https://github.com/Mary-Gower/HCDE/blob/master/grasshopper.3dm
+Rhino: 
 </p>
 <p>
-AI: https://github.com/Mary-Gower/HCDE/blob/master/grasshopper_laser-print.ai
+AI: 
 </p>
 
 <p>
-            Shout Outs: Nick Moolenijzer helped me understand the github repositories a bit better - although I'm still learning! Jody Laflen was a help when I ran into her in the Mill and offered me a link to a place where she has been finding resources to help her learn the software we are using!</p>
+            Shout Outs: Ackshay Rawat and Nichelle for keeping me sane and commiserating with me through the process!</p>
 	   </div>
 <p>
    </p>
