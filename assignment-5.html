@@ -8,51 +8,54 @@
     </head> 
     <body> 
         <div class="header">
-            <h1>3D Printing</h1>
+            <h1>Getting Meshy with Lamps</h1>
             <p>
             <img src="print-2-all.jpg" width=400></a>
             </p>
             <p>
-            The Goal: Create and print in the Mill or with a 3D printer a tightly joined box that connects without the aid of glue or other adhesives.
+            The Goal: Learn how to manipulate and change STL files and work with points and meshes in Rhino.
             </p>
 	   <p>
-            Tools Used: Rhino, Calipers, Filament, 3D Printer, more YouTube tutorials on how to print things on an Ender3 Pro, lots of patience.
+            Tools Used: Rhino, Calipers, STL files from cults3D.com, lots of patience.
             </p>
 	</div>
         <div class="assignments">
         </div>
         <div class="header h1">
 </div>
-            <h2>Creating a Box</h2>
+            <h2>Choosing STL Files</h2>
 	    <p>
             <img src="print-1-design.jpg" width=400></a>
             </p>
  <p>
-            I tried a few different methods when making the box to print. I knew I had been struggling with 3D printing and understanding how to create geometry in Rhino that would print well. I also know that more complex assignments are on the horizon and I wanted to learn more and gain better skills with these tools. I first tried to make a box by joining multiple solid box objects together in a 3D plane and using the UnionBoolean command to group the pieces that I wanted to print. That proved to be more complicated than I anticipated and my first print was not successful. I spoke with classmates Akshay Rawat and Rodrigo Tarribia to ask their advice and realized the method of drawing the shape in 2d and then extruding it, capping it, and exporting it as I had done for previous assignments would be best. Time to print: 50 minutes
+            I had to manage my expectations with this assignment after finding an STL file of a lamp shade that I really liked and exporting it to Cura to slice and finding out that it would take roughly 2 and a half days to print. So I went back to the drawing board and looked at files on cults3D.com. I found an interesting looking coral inspired, round lamp shade and wanted another piece to anchor the shape to the light fixture.
 	    </p>   
    </div>
 
   <div class="header h1">
 	    </div>
-            <h2>First Print</h2>
+            <h2>Finding the Right Measurements</h2>
             <p>
             <img src="print-1-fail.jpg" width=400></a>
             </p>
+  <p>
+            <img src="print-1-fail.jpg" width=400></a>
+            </p>
             <p>
-      	   My first test print was a failure and I had to go back to the drawing board and redesign the model. I also wanted to avoide bed plate adhesion which has been problematic for past prints and I tried to print the box pieces sitting vertically. This resulted in the biggest failure when one of the pieces fell over. In hindsight, one way to fix this could have been to use supports.  </p>
+      	   After downloading the STL files and examining them in Rhino separately to get their dimensions using the Distance command, I measured my lamp hardware to understand the correct measurements that I would need to scale the points of the openings down to.   </p>
 	</p>
 </div>
  <div class="header h1">
 	 </div>
-            <h2>Second Print</h2>
+            <h2>Scaling and Joining the Mesh</h2>
 	    <p>
-           All of my designs were made in rhino and then exported as an STL into Cura and then using the microSD chip I transfered the file to the Ender3 Pro. Time to print for the first print was 1 hour and 20 minutes. The first measurements of the joints of the cube were too small and I found the same to be true for the second round of measurements. When I consulted a friend, I was told that perhaps it was the wall thickness that I had set in Cura and that if I adust that and the infill I may be able to print faster and with more accurate prints. 
+           After measuring the lamp hardware, I knew that the hole for the cord to go through had to be greater than the size of the largest part of the plug (25.34mm) and smaller than the size of the largest part of the bulb fixture (37.18mm). I decided to scale the size of the two holes that I was joining down to 35mm. In the future I may decide to scale this down even further.
         </p>
 	    <p>
             <img src="print-2-design2.jpg" width=400></a>
             </p>
 	    <p>
-            My settings were placed at 200 degrees for the nozzle and the bed was set to 60 degrees fahrenheit.
+           I used the ReduceMesh command to reduce the number of polygons in both the coral circle and the hourglass anchor shape. I changed the number of polygons in the coral circle from 100,000 to 50,000 and the hourglass shape from 1000 to 500. 
             </p>
 	    <p>
             <img src="print-2-infill.jpg" width=400></a>
@@ -65,7 +68,7 @@
          </p>
 	    <p>
 	    <p>
-           The time for the second print was 3hrs and 14 minutes. Unfortunately this next print was not able to combine into a box. When I measured the pieces, I noted that the parts were that should fit togethere were measuring off from what I had designed them to be in Rhino. I will adjust them slightly and the printer settings for the next print to get a box that will fully close and latch together.
+          I scaled the diameters of the circles of both mesh shapes down to 35mm and then used the Join command to join the two together. I tried to use the BooleanUnion tool but for some reason was unable to join the shapes with this command. However, I was still able to get a closed mesh with the Join command and when I exporteed the object as an STL and sliced it in Cura there were no issues.
             </p>
 	    <p>
             <img src="print-2-printerbed.jpg" width=400></a>
@@ -77,7 +80,7 @@
             <img src="print-2-measuring2.jpg" width=400></a>
          </p>
 	    <p>
-		I finally was able to print pieces that would lock together and hold after changing the dimensions of the original Rhino file and moving the points of the interlocking joints over by .4mm in both directions to make the joints bigger. This was a number that I got from the difference between the sice of the original pegs and indents from my first print. I also set the tolerance to .1.
+		Cura estimated the time to print at Super Quality to be 22 hours and at Standard Quality 12 hours. I am not sure if this is an appropriate amount of time for this model, but I would be curious to learn more about others and their projects and the estimated time to print!
             </p>
 <p>
 			<img src="a4-locking-pieces-1.gif" width=400></a>
@@ -92,7 +95,7 @@
 	<a href = "https://github.com/Mary-Gower/HCDE/tree/master/a4%20sources">sources</a> 
 </p>
 
-            Shout Outs: Ackshay Rawat, Rodrigo Tarriba, Nichelle, and all of the people in the discord chat who are constantly sharing information like Jalia Evans!</p>
+            Shout Outs: Akshay Rawat and David Pearl for their encouragement and help talking through assignments!</p>
 	   </div>
 <p>
    </p>
